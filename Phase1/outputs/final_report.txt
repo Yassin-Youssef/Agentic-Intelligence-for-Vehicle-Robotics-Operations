@@ -1,0 +1,22 @@
+Operational metrics report: 
+
+Metric: temperature
+-Mean: 76.45
+-Min: 45.00
+-Max: 118.00
+-Std Dev: 27.94
+No anomalies detected
+
+Metric: latency
+-Mean: 509.09
+-Min: 120.00
+-Max: 1800.00
+-Std Dev: 558.40
+Anomalies detected : 3
+
+Metric: error_rate
+-Mean: 0.14
+-Min: 0.01
+-Max: 0.45
+-Std Dev: 0.14
+Anomalies detected : 1

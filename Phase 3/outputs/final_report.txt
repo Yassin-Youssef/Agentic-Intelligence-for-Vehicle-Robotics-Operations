@@ -1,0 +1,226 @@
+Operational Metrics Report
+
+==============================
+Vehicle ID: CAR_A
+Health Status: Healthy
+==============================
+
+Metric: temperature
+- Mean: 77.00
+- Min: 74.00
+- Max: 80.00
+- Std Dev: 2.16
+- No anomalies detected
+
+Metric: latency
+- Mean: 587.86
+- Min: 410.00
+- Max: 910.00
+- Std Dev: 195.66
+- Anomalies detected: 2
+
+Metric: error_rate
+- Mean: 0.06
+- Min: 0.04
+- Max: 0.09
+- Std Dev: 0.02
+- No anomalies detected
+
+Metric: battery_voltage
+- Mean: 12.29
+- Min: 11.90
+- Max: 12.60
+- Std Dev: 0.24
+- No anomalies detected
+
+Metric: cpu_usage
+- Mean: 56.14
+- Min: 46.00
+- Max: 71.00
+- Std Dev: 8.88
+- No anomalies detected
+
+Metric: memory_usage
+- Mean: 57.86
+- Min: 53.00
+- Max: 64.00
+- Std Dev: 3.98
+- No anomalies detected
+
+Metric: gps_accuracy
+- Mean: 1.73
+- Min: 1.20
+- Max: 2.30
+- Std Dev: 0.42
+- No anomalies detected
+
+Metric: network_strength
+- Mean: -74.86
+- Min: -80.00
+- Max: -71.00
+- Std Dev: 3.29
+- No anomalies detected
+
+Metric: vibration
+- Mean: 0.66
+- Min: 0.30
+- Max: 1.10
+- Std Dev: 0.29
+- No anomalies detected
+
+Metric: wheel_speed_variance
+- Mean: 8.57
+- Min: 4.00
+- Max: 15.00
+- Std Dev: 3.60
+- No anomalies detected
+
+==============================
+Vehicle ID: CAR_B
+Health Status: Critical
+==============================
+
+Metric: temperature
+- Mean: 106.71
+- Min: 92.00
+- Max: 128.00
+- Std Dev: 13.15
+- Anomalies detected: 1
+
+Metric: latency
+- Mean: 697.14
+- Min: 580.00
+- Max: 840.00
+- Std Dev: 85.19
+- Anomalies detected: 1
+
+Metric: error_rate
+- Mean: 0.20
+- Min: 0.10
+- Max: 0.31
+- Std Dev: 0.07
+- Anomalies detected: 1
+
+Metric: battery_voltage
+- Mean: 12.09
+- Min: 11.90
+- Max: 12.30
+- Std Dev: 0.13
+- No anomalies detected
+
+Metric: cpu_usage
+- Mean: 79.00
+- Min: 68.00
+- Max: 91.00
+- Std Dev: 7.87
+- Anomalies detected: 1
+
+Metric: memory_usage
+- Mean: 77.29
+- Min: 70.00
+- Max: 84.00
+- Std Dev: 4.89
+- No anomalies detected
+
+Metric: gps_accuracy
+- Mean: 2.80
+- Min: 2.40
+- Max: 3.50
+- Std Dev: 0.38
+- No anomalies detected
+
+Metric: network_strength
+- Mean: -87.14
+- Min: -91.00
+- Max: -84.00
+- Std Dev: 2.41
+- Anomalies detected: 1
+
+Metric: vibration
+- Mean: 1.69
+- Min: 1.00
+- Max: 2.60
+- Std Dev: 0.54
+- Anomalies detected: 2
+
+Metric: wheel_speed_variance
+- Mean: 12.43
+- Min: 8.00
+- Max: 18.00
+- Std Dev: 3.31
+- Anomalies detected: 1
+
+==============================
+Vehicle ID: CAR_C
+Health Status: Critical
+==============================
+
+Metric: temperature
+- Mean: 149.71
+- Min: 138.00
+- Max: 167.00
+- Std Dev: 10.87
+- Anomalies detected: 7
+
+Metric: latency
+- Mean: 1198.57
+- Min: 870.00
+- Max: 1680.00
+- Std Dev: 313.76
+- Anomalies detected: 7
+
+Metric: error_rate
+- Mean: 0.48
+- Min: 0.25
+- Max: 0.71
+- Std Dev: 0.18
+- Anomalies detected: 5
+
+Metric: battery_voltage
+- Mean: 11.20
+- Min: 10.60
+- Max: 11.90
+- Std Dev: 0.52
+- Anomalies detected: 5
+
+Metric: cpu_usage
+- Mean: 91.14
+- Min: 83.00
+- Max: 99.00
+- Std Dev: 6.31
+- Anomalies detected: 4
+
+Metric: memory_usage
+- Mean: 79.86
+- Min: 78.00
+- Max: 82.00
+- Std Dev: 1.35
+- No anomalies detected
+
+Metric: gps_accuracy
+- Mean: 6.40
+- Min: 3.70
+- Max: 9.10
+- Std Dev: 2.08
+- Anomalies detected: 5
+
+Metric: network_strength
+- Mean: -87.86
+- Min: -90.00
+- Max: -86.00
+- Std Dev: 1.35
+- Anomalies detected: 1
+
+Metric: vibration
+- Mean: 3.73
+- Min: 1.70
+- Max: 5.70
+- Std Dev: 1.54
+- Anomalies detected: 5
+
+Metric: wheel_speed_variance
+- Mean: 29.14
+- Min: 13.00
+- Max: 48.00
+- Std Dev: 13.21
+- Anomalies detected: 5

@@ -1,0 +1,5 @@
+# docs/ — RAG source documents
+# Seed documents will be added in Session 4:
+#   - thresholds.md      (domain thresholds from analyze_metrics.py)
+#   - classification_rules.md (Healthy/Warning/Critical rules)
+#   - architecture.md    (pipeline overview)

@@ -1,0 +1,34 @@
+---
+# .clang-format — Phase 4 C Coding Standards
+# Based on Google Style with minor adjustments for memory-safe C11
+
+Language:        C
+BasedOnStyle:    Google
+Standard:        c11
+
+# Column limit
+ColumnLimit:     80
+
+# Indentation
+IndentWidth:     4
+UseTab:          Never
+ContinuationIndentWidth: 4
+
+# Braces
+BreakBeforeBraces: Attach
+
+# Pointers
+PointerAlignment: Right
+
+# Includes
+SortIncludes:    true
+IncludeBlocks:   Regroup
+
+# Macros
+AlignMacros:     true
+MacroBlockBegin: "^[A-Z_]+_BEGIN$"
+MacroBlockEnd:   "^[A-Z_]+_END$"
+
+# Comments
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 1

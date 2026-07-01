@@ -1,0 +1,17 @@
+# Phase 4 — Multi-Agent Telemetry Pipeline
+# Install: pip install -r requirements.txt
+
+# --- RAG (Retrieval-Augmented Generation) ---
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# --- LLM Clients ---
+openai>=1.0.0            # GPT + GPT-4o-mini via OpenAI API
+anthropic>=0.25.0        # Sonnet + Opus via Anthropic API
+
+# --- Environment & Utilities ---
+python-dotenv>=1.0.0
+
+# --- Linting & Formatting (dev) ---
+pylint>=3.0.0
+pre-commit>=3.5.0

@@ -1,0 +1,40 @@
+[MASTER]
+# .pylintrc — Phase 4 Python Standards
+# Specifies allowed modules and enforces style guidelines from CLAUDE.md
+
+[MESSAGES CONTROL]
+# Disable some overly strict warnings
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    invalid-name,
+    too-many-arguments,
+    too-few-public-methods,
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    import-error,
+    broad-except,
+    fixme,
+    redefined-outer-name,
+    import-outside-toplevel
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=100
+
+[BASIC]
+# Good variable names which should always be accepted, separated by a comma.
+good-names=i,j,k,ex,Run,_,f,q,r,x,y,z,db,ef,id,vid
+
+[DESIGN]
+# Maximum number of arguments for function / method.
+max-args=8
+
+[SIMILARITIES]
+# Minimum lines number of a similarity.
+min-similarity-lines=10
+# Ignore comments when computing similarities.
+ignore-comments=yes
+# Ignore docstrings when computing similarities.
+ignore-docstrings=yes

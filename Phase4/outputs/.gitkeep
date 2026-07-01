@@ -1,0 +1,7 @@
+# outputs/ — Pipeline output directory
+# Generated files:
+#   - validated_data.json     (from data_agent)
+#   - analysis_results.json   (from analysis_agent)
+#   - fleet_status.json       (from classification_agent)
+#   - final_report.txt        (from formatting_agent)
+#   - compliance_report.txt   (from coding_agent)

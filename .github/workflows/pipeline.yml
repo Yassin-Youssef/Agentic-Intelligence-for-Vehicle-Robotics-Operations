@@ -1,0 +1,73 @@
+name: Phase 4 Pipeline CI
+
+on:
+  push:
+    paths:
+      - 'Phase4/**'
+  pull_request:
+    paths:
+      - 'Phase4/**'
+
+jobs:
+  lint-and-test:
+    name: Lint & Test Pipeline
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Phase4
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install C dependencies
+        run: sudo apt-get update && sudo apt-get install -y gcc make clang-format
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pylint
+
+      - name: Lint C code (clang-format)
+        run: |
+          echo "Running clang-format check..."
+          # If this fails, it means C files are not formatted correctly.
+          # Run 'clang-format -i agents_c/*.c agents_c/*.h' locally to fix.
+          find agents_c -name "*.c" -o -name "*.h" | xargs clang-format --Werror -n
+
+      - name: Lint Python code (pylint)
+        run: |
+          echo "Running pylint check..."
+          pylint --rcfile=.pylintrc $(find . -name "*.py")
+
+      - name: Build C binaries
+        run: |
+          echo "Compiling C agents..."
+          make clean
+          make
+
+      - name: Test C Pipeline (Standalone)
+        run: |
+          echo "Testing C deterministic core..."
+          make test
+
+      - name: Test Python Execution (Mock Mode)
+        # Runs main.py without API keys. Will use mock LLM responses.
+        run: |
+          echo "Running full pipeline in mock mode..."
+          python main.py
+          
+      - name: Verify outputs exist
+        run: |
+          test -f outputs/validated_data.json
+          test -f outputs/analysis_results.json
+          test -f outputs/fleet_status.json
+          test -f outputs/final_report.md
+          test -f outputs/compliance_report.txt
+          echo "All pipeline outputs verified."

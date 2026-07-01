@@ -1,0 +1,27 @@
+# Phase 4 pre-commit hooks
+# Enforces Layer 3 tooling checks locally before commits
+# Install with: pip install pre-commit && pre-commit install
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+
+  - repo: https://github.com/pylint-dev/pylint
+    rev: v3.0.3
+    hooks:
+      - id: pylint
+        args: ["--rcfile=Phase4/.pylintrc"]
+        files: ^Phase4/.*\.py$
+
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v17.0.6
+    hooks:
+      - id: clang-format
+        args: ["--style=file"]
+        files: ^Phase4/agents_c/.*\.(c|h)$

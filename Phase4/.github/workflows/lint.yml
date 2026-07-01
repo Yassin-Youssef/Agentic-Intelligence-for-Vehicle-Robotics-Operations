@@ -1,0 +1,76 @@
+name: Phase 4 Lint & CI
+
+on:
+  push:
+    paths:
+      - "Phase4/**"
+  pull_request:
+    paths:
+      - "Phase4/**"
+
+defaults:
+  run:
+    working-directory: Phase4
+
+jobs:
+  clang-format:
+    name: C Style (clang-format)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-format 17
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y clang-format-17
+          sudo ln -sf /usr/bin/clang-format-17 /usr/bin/clang-format
+
+      - name: Check C formatting
+        run: |
+          find agents_c -name "*.c" -o -name "*.h" | while read f; do
+            diff <(clang-format --style=file "$f") "$f" || {
+              echo "::error file=$f::clang-format violation — run 'clang-format -i $f'"
+              exit 1
+            }
+          done
+
+  pylint:
+    name: Python Style (pylint)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pylint>=3.0.0
+
+      - name: Run pylint on Python agents
+        run: |
+          pylint --rcfile=.pylintrc \
+            agents_py/llm_client.py \
+            agents_py/search_agent.py \
+            agents_py/explanation_agent.py \
+            agents_py/formatting_agent.py \
+            agents_py/coding_agent.py \
+            rag/rag_setup.py \
+            rag/rag_query.py \
+            main.py
+
+  whitespace:
+    name: Trailing Whitespace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check trailing whitespace in Phase4
+        run: |
+          if grep -rn " $" agents_c/ agents_py/ rag/ docs/ \
+               --include="*.c" --include="*.h" --include="*.py" \
+               --include="*.md" --include="*.yaml" --include="*.yml"; then
+            echo "::error::Trailing whitespace found — fix before merging"
+            exit 1
+          fi

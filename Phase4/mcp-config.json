@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "GitHub MCP server for Cursor. Intended uses: read CI status from .github/workflows/lint.yml, create issues for Critical vehicles, open PRs for report artifacts. This is Cursor-side configuration — it is not invoked from main.py at runtime."
+    }
+  }
+}

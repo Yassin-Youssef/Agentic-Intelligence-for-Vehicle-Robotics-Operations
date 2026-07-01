@@ -1,0 +1,304 @@
+{
+  "status": "success",
+  "results": {
+    "CAR_A": {
+      "kpis": {
+        "temperature": {
+          "mean": 77,
+          "min": 74,
+          "max": 80,
+          "std": 2.16025
+        },
+        "latency": {
+          "mean": 587.857,
+          "min": 410,
+          "max": 910,
+          "std": 195.658
+        },
+        "error_rate": {
+          "mean": 0.0571429,
+          "min": 0.04,
+          "max": 0.09,
+          "std": 0.0179947
+        },
+        "battery_voltage": {
+          "mean": 12.2857,
+          "min": 11.9,
+          "max": 12.6,
+          "std": 0.24103
+        },
+        "cpu_usage": {
+          "mean": 56.1429,
+          "min": 46,
+          "max": 71,
+          "std": 8.87747
+        },
+        "memory_usage": {
+          "mean": 57.8571,
+          "min": 53,
+          "max": 64,
+          "std": 3.97612
+        },
+        "gps_accuracy": {
+          "mean": 1.72857,
+          "min": 1.2,
+          "max": 2.3,
+          "std": 0.419183
+        },
+        "network_strength": {
+          "mean": -74.8571,
+          "min": -80,
+          "max": -71,
+          "std": 3.28778
+        },
+        "vibration": {
+          "mean": 0.657143,
+          "min": 0.3,
+          "max": 1.1,
+          "std": 0.287849
+        },
+        "wheel_speed_variance": {
+          "mean": 8.57143,
+          "min": 4,
+          "max": 15,
+          "std": 3.59894
+        }
+      },
+      "anomalies": {
+        "temperature": [],
+        "latency": [
+          820,
+          910
+        ],
+        "error_rate": [],
+        "battery_voltage": [],
+        "cpu_usage": [],
+        "memory_usage": [],
+        "gps_accuracy": [],
+        "network_strength": [],
+        "vibration": [],
+        "wheel_speed_variance": []
+      }
+    },
+    "CAR_B": {
+      "kpis": {
+        "temperature": {
+          "mean": 106.714,
+          "min": 92,
+          "max": 128,
+          "std": 13.1493
+        },
+        "latency": {
+          "mean": 697.143,
+          "min": 580,
+          "max": 840,
+          "std": 85.1889
+        },
+        "error_rate": {
+          "mean": 0.195714,
+          "min": 0.1,
+          "max": 0.31,
+          "std": 0.072539
+        },
+        "battery_voltage": {
+          "mean": 12.0857,
+          "min": 11.9,
+          "max": 12.3,
+          "std": 0.134519
+        },
+        "cpu_usage": {
+          "mean": 79,
+          "min": 68,
+          "max": 91,
+          "std": 7.87401
+        },
+        "memory_usage": {
+          "mean": 77.2857,
+          "min": 70,
+          "max": 84,
+          "std": 4.88925
+        },
+        "gps_accuracy": {
+          "mean": 2.8,
+          "min": 2.4,
+          "max": 3.5,
+          "std": 0.382971
+        },
+        "network_strength": {
+          "mean": -87.1429,
+          "min": -91,
+          "max": -84,
+          "std": 2.4103
+        },
+        "vibration": {
+          "mean": 1.68571,
+          "min": 1,
+          "max": 2.6,
+          "std": 0.54292
+        },
+        "wheel_speed_variance": {
+          "mean": 12.4286,
+          "min": 8,
+          "max": 18,
+          "std": 3.30944
+        }
+      },
+      "anomalies": {
+        "temperature": [
+          128
+        ],
+        "latency": [
+          840
+        ],
+        "error_rate": [
+          0.31
+        ],
+        "battery_voltage": [],
+        "cpu_usage": [
+          91
+        ],
+        "memory_usage": [],
+        "gps_accuracy": [],
+        "network_strength": [
+          -91
+        ],
+        "vibration": [
+          2.6,
+          2.1
+        ],
+        "wheel_speed_variance": [
+          18
+        ]
+      }
+    },
+    "CAR_C": {
+      "kpis": {
+        "temperature": {
+          "mean": 149.714,
+          "min": 138,
+          "max": 167,
+          "std": 10.8737
+        },
+        "latency": {
+          "mean": 1198.57,
+          "min": 870,
+          "max": 1680,
+          "std": 313.764
+        },
+        "error_rate": {
+          "mean": 0.481429,
+          "min": 0.25,
+          "max": 0.71,
+          "std": 0.17771
+        },
+        "battery_voltage": {
+          "mean": 11.2,
+          "min": 10.6,
+          "max": 11.9,
+          "std": 0.516398
+        },
+        "cpu_usage": {
+          "mean": 91.1429,
+          "min": 83,
+          "max": 99,
+          "std": 6.30948
+        },
+        "memory_usage": {
+          "mean": 79.8571,
+          "min": 78,
+          "max": 82,
+          "std": 1.34519
+        },
+        "gps_accuracy": {
+          "mean": 6.4,
+          "min": 3.7,
+          "max": 9.1,
+          "std": 2.07525
+        },
+        "network_strength": {
+          "mean": -87.8571,
+          "min": -90,
+          "max": -86,
+          "std": 1.34519
+        },
+        "vibration": {
+          "mean": 3.72857,
+          "min": 1.7,
+          "max": 5.7,
+          "std": 1.5435
+        },
+        "wheel_speed_variance": {
+          "mean": 29.1429,
+          "min": 13,
+          "max": 48,
+          "std": 13.2089
+        }
+      },
+      "anomalies": {
+        "temperature": [
+          142,
+          148,
+          153,
+          160,
+          167,
+          138,
+          140
+        ],
+        "latency": [
+          980,
+          1150,
+          1320,
+          1500,
+          1680,
+          890,
+          870
+        ],
+        "error_rate": [
+          0.42,
+          0.5,
+          0.58,
+          0.64,
+          0.71
+        ],
+        "battery_voltage": [
+          11.4,
+          11.1,
+          10.9,
+          10.7,
+          10.6
+        ],
+        "cpu_usage": [
+          92,
+          95,
+          97,
+          99
+        ],
+        "memory_usage": [],
+        "gps_accuracy": [
+          5.8,
+          6.6,
+          7.4,
+          8.3,
+          9.1
+        ],
+        "network_strength": [
+          -90
+        ],
+        "vibration": [
+          3.2,
+          3.9,
+          4.6,
+          5.1,
+          5.7
+        ],
+        "wheel_speed_variance": [
+          24,
+          29,
+          35,
+          41,
+          48
+        ]
+      }
+    }
+  }
+}

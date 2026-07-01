@@ -17,10 +17,7 @@ agents_c/data_agent
 agents_c/analysis_agent
 agents_c/classification_agent
 
-# Pipeline outputs (regenerated each run)
-outputs/*.json
-outputs/*.txt
-outputs/*.md
+
 
 # OS files
 .DS_Store

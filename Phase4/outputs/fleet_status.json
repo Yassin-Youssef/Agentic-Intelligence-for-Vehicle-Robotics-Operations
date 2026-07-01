@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "fleet_status": {
+    "CAR_A": {
+      "status": "Healthy",
+      "total_anomalies": 2,
+      "metrics_affected": 1
+    },
+    "CAR_B": {
+      "status": "Critical",
+      "total_anomalies": 8,
+      "metrics_affected": 7
+    },
+    "CAR_C": {
+      "status": "Critical",
+      "total_anomalies": 44,
+      "metrics_affected": 9
+    }
+  }
+}
